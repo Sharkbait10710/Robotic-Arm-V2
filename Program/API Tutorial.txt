@@ -1,0 +1,56 @@
+Setting Up Directory
+	Go to Cmd
+	Change directory to desired folder by typing cd followed by folder address
+	Type mkdir to make new folder which will be your directory
+	Change directory to the added folder
+	Type npm init and press enter until you reach the (yes) option. Type yes
+
+Installing Librarys
+	Open up directory and then open up a new terminal
+	Type npm install --save express
+	Type npm install --save morgan
+	Type npm install --save-dev nodemon
+	Type npm install --save body-parser
+	Add new file called server.js
+	Add new file called app.js
+
+server.js (file)
+	const http = require('http');
+	const app = require('./app');
+	const port = process.env.PORT || 3000;
+
+	const server = http.createServer();
+
+	server.listen(port);
+
+app.js (file)
+	const express = require('express');
+	const app = express();
+
+	const motorsRoutes = require('./api/routes/motors');
+	app.use('/motors', motorsRoutes);
+
+	module.exports = app;
+
+example route function
+	router.patch('/:motorId', (req, res, next) => {
+    		res.status(200).json({
+       			 message: 'Updated motor state'
+    		});
+	});
+
+example delete function given a MongoDB ID
+	router.delete("/:motorId", (req, res, next) => {
+		const id = req.params.motorId;
+		Motor.remove({_id: id})
+		.exec()
+		.then(res => {
+			res.status(200.json(result);
+		})
+		.catch(err => {
+			console.log(err);
+			res.status(500).json({
+				error: err
+			});
+		});
+	});

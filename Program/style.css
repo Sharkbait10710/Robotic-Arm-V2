@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#system {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex {
+    display: flex;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.flex-child {
+    text-align: center;
+    font-size: 400%;
+    overflow:hidden;
+    font-family: 'Ubuntu', sans-serif;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#shoulder {background-color: #db4a40;}
+#shoulder:active {background-color:#ff1a0a;}
+#shoulder- {background-color: #8f3c37;}
+#shoulder-:active {background-color:#ff1a0a;}
+
+#shoulder_2 {background-color: #e3dc19;}
+#shoulder_2:active {background-color: #fff600;}
+#shoulder_2- {background-color: #85822d;}
+#shoulder_2-:active {background-color: #fff600;}
+
+#elbow {background-color: #63d91a;}
+#elbow:active {background-color: #61ff00;}
+#elbow- {background-color: #497e29;}
+#elbow-:active {background-color: #61ff00;}
+
+#wrist {background-color: #1be0c3;}
+#wrist:active {background-color: #00ffd9;}
+#wrist- {background-color: #2a8f80;}
+#wrist-:active {background-color: #00ffd9;}
+
+#fingers {background-color: #cc1dc3;}
+#fingers:active {background-color: #ff00f2;}
+#fingers- {background-color: #81307d;}
+#fingers-:active {background-color: #ff00f2;}
+

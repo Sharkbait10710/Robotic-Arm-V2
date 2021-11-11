@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Motor Control System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body ontouchstart>
+        <div id="system">
+
+            <div id="forward" class = "flex">
+                <div id="shoulder" class = "flex-child"
+                    ontouchstart="On('shoulder','1')" ontouchend="Off('shoulder')"
+                    onmousedown="On('shoulder','1')" onmouseup="Off('shoulder')">Shoulder</div>
+                <div id="shoulder_2" class = "flex-child"
+                    ontouchstart="On('shoulder_2','1')" ontouchend="Off('shoulder_2')"
+                    onmousedown="On('shoulder_2','1')" onmouseup="Off('shoulder_2')">Shoulder_2</div>
+                <div id="elbow" class = "flex-child"
+                    ontouchstart="On('elbow','1')" ontouchend="Off('elbow')"
+                    onmousedown="On('elbow','1')" onmouseup="Off('elbow')">Elbow</div>
+                <div id="wrist" class = "flex-child"
+                    ontouchstart="On('wrist','1')" ontouchend="Off('wrist')"
+                    onmousedown="On('wrist','1')" onmouseup="Off('wrist')">Wrist</div>
+                <div id="fingers" class = "flex-child"
+                    ontouchstart="On('fingers','1')" ontouchend="Off('fingers')"
+                    onmousedown="On('fingers','1')" onmouseup="Off('fingers')">Fingers</div>
+            </div>
+
+            <div id="backward" class = "flex">
+                <div id="shoulder-" class = "flex-child"
+                    ontouchstart="On('shoulder','-1')" ontouchend="Off('shoulder')"
+                    onmousedown="On('shoulder','-1')" onmouseup="Off('shoulder')">Shoulder-</div>
+                <div id="shoulder_2-" class = "flex-child"
+                    ontouchstart="On('shoulder_2','-1')" ontouchend="Off('shoulder_2')"
+                    onmousedown="On('shoulder_2','-1')" onmouseup="Off('shoulder_2')">Shoulder_2-</div>
+                <div id="elbow-" class = "flex-child"
+                    ontouchstart="On('elbow','-1')" ontouchend="Off('elbow')"
+                    onmousedown="On('elbow','-1')" onmouseup="Off('elbow')">Elbow-</div>
+                <div id="wrist-" class = "flex-child"
+                    ontouchstart="On('wrist','-1')" ontouchend="Off('wrist')"
+                    onmousedown="On('wrist','-1')" onmouseup="Off('wrist')">Wrist-</div>
+                <div id="fingers-" class = "flex-child"
+                    ontouchstart="On('fingers','-1')" ontouchend="Off('fingers')"
+                    onmousedown="On('fingers','-1')" onmouseup="Off('fingers')">Fingers-</div>
+            </div>
+            
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

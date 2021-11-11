@@ -1,0 +1,13 @@
+shoulder:   608cedbc5957d835a4e40f5a
+shoulder_2: 608da7277bd6ae4454703dec
+elbow:      608d992eedc5d13c60b38f80
+wrist:      608d995be01959233c5d4d18
+fingers:    608d9ad91a1ec64058d510d3
+
+Patch Json Array
+[
+    {
+        "propName": "state", 
+        "value": "1"
+    }
+]
